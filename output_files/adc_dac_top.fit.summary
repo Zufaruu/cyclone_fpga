@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue May 16 14:22:59 2023
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : adc_dac_top
+Top-level Entity Name : adc_dac_top
+Family : Cyclone III
+Device : EP3C120F780C7
+Timing Models : Final
+Total logic elements : 5 / 119,088 ( < 1 % )
+    Total combinational functions : 5 / 119,088 ( < 1 % )
+    Dedicated logic registers : 4 / 119,088 ( < 1 % )
+Total registers : 4
+Total pins : 34 / 532 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 7,168 / 3,981,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 576 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="adc_dac_top">
+		<CBX_INST_ENTRY INSTANCE_NAME="|adc_dac_top|sine:sine1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6671.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|adc_dac_top|sine:sine2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_6671.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
