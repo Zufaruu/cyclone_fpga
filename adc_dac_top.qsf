@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C120F780C7
-set_global_assignment -name TOP_LEVEL_ENTITY adc_dac_top
+set_global_assignment -name TOP_LEVEL_ENTITY Lowpass_2_MHz
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:12:17  MAY 05, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -46,16 +46,8 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name VERILOG_FILE adc_dac_top.v
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_AH15 -to clk
-set_global_assignment -name CDF_FILE output_files/Chain1.cdf
-set_global_assignment -name QIP_FILE sine.qip
-set_global_assignment -name VERILOG_FILE triangle_wave.v
-set_global_assignment -name QIP_FILE sine90.qip
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_M1 -to mode
 set_location_assignment PIN_M3 -to DAC_A[13]
 set_location_assignment PIN_M4 -to DAC_A[12]
@@ -71,24 +63,8 @@ set_location_assignment PIN_V3 -to DAC_A[3]
 set_location_assignment PIN_V4 -to DAC_A[2]
 set_location_assignment PIN_R6 -to DAC_A[1]
 set_location_assignment PIN_R7 -to DAC_A[0]
-set_location_assignment PIN_U5 -to DAC_B[13]
-set_location_assignment PIN_U6 -to DAC_B[12]
-set_location_assignment PIN_U1 -to DAC_B[11]
-set_location_assignment PIN_U2 -to DAC_B[10]
-set_location_assignment PIN_V1 -to DAC_B[9]
-set_location_assignment PIN_V2 -to DAC_B[8]
-set_location_assignment PIN_W1 -to DAC_B[7]
-set_location_assignment PIN_W2 -to DAC_B[6]
-set_location_assignment PIN_U4 -to DAC_B[5]
-set_location_assignment PIN_U3 -to DAC_B[4]
-set_location_assignment PIN_Y3 -to DAC_B[3]
-set_location_assignment PIN_Y4 -to DAC_B[2]
-set_location_assignment PIN_AB1 -to DAC_B[1]
-set_location_assignment PIN_AB2 -to DAC_B[0]
 set_location_assignment PIN_G5 -to dac_clk_A
-set_location_assignment PIN_G6 -to dac_clk_B
 set_location_assignment PIN_M2 -to dac_wrt_A
-set_location_assignment PIN_R2 -to dac_wrt_B
 set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_A[13]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_A[11]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_A[10]
@@ -103,24 +79,56 @@ set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_A[12]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_A[2]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_A[1]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_A[0]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[13]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[12]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[11]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[10]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[9]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[8]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[7]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[6]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[5]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[4]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[3]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[2]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_B[0]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to dac_clk_A
-set_instance_assignment -name IO_STANDARD "2.5 V" -to dac_clk_B
 set_instance_assignment -name IO_STANDARD "2.5 V" -to dac_wrt_A
-set_instance_assignment -name IO_STANDARD "2.5 V" -to dac_wrt_B
 set_instance_assignment -name IO_STANDARD "2.5 V" -to mode
 set_instance_assignment -name IO_STANDARD "2.5 V" -to clk
+set_location_assignment PIN_L2 -to ADC_A[13]
+set_location_assignment PIN_L1 -to ADC_A[12]
+set_location_assignment PIN_K2 -to ADC_A[11]
+set_location_assignment PIN_K1 -to ADC_A[10]
+set_location_assignment PIN_J6 -to ADC_A[9]
+set_location_assignment PIN_J5 -to ADC_A[8]
+set_location_assignment PIN_H4 -to ADC_A[7]
+set_location_assignment PIN_H3 -to ADC_A[6]
+set_location_assignment PIN_G4 -to ADC_A[5]
+set_location_assignment PIN_G3 -to ADC_A[4]
+set_location_assignment PIN_F2 -to ADC_A[3]
+set_location_assignment PIN_F1 -to ADC_A[2]
+set_location_assignment PIN_E3 -to ADC_A[1]
+set_location_assignment PIN_F3 -to ADC_A[0]
+set_location_assignment PIN_D1 -to adc_clk_A
+set_location_assignment PIN_L4 -to adc_en_A
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[13]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[12]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[11]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[9]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[8]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[7]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[6]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[5]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[4]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[3]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[2]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[1]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[0]
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adc_clk_A
+set_instance_assignment -name IO_STANDARD "2.5 V" -to adc_en_A
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_A[10]
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_instance_assignment -name IO_STANDARD "2.5 V" -to reset
+set_location_assignment PIN_AC14 -to reset
+set_global_assignment -name VERILOG_FILE Lowpass_2_MHz.v
+set_global_assignment -name VERILOG_FILE Lowpass_1_MHz.v
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_global_assignment -name QIP_FILE sine.qip
+set_global_assignment -name VERILOG_FILE triangle_wave.v
+set_global_assignment -name QIP_FILE sine90.qip
+set_global_assignment -name QIP_FILE bandpass.qip
+set_global_assignment -name VERILOG_FILE sine_wave_14bit.v
+set_global_assignment -name VERILOG_FILE adc_dac_top.v
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

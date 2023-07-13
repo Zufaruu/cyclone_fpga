@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at Lowpass_2_MHz.v(1811): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at Lowpass_1_MHz.v(1812): always construct contains both blocking and non-blocking assignments

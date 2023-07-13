@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Tue May 16 14:22:46 2023
+Analysis & Synthesis Status : Successful - Thu Jun 15 11:50:03 2023
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : adc_dac_top
-Top-level Entity Name : adc_dac_top
+Top-level Entity Name : Lowpass_2_MHz
 Family : Cyclone III
-Total logic elements : 5
-    Total combinational functions : 5
-    Dedicated logic registers : 4
-Total registers : 4
-Total pins : 34
+Total logic elements : 8,121
+    Total combinational functions : 6,707
+    Dedicated logic registers : 1,428
+Total registers : 1428
+Total pins : 35
 Total virtual pins : 0
-Total memory bits : 7,168
+Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

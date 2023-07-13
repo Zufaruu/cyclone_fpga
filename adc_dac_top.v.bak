@@ -1,19 +1,33 @@
 module adc_dac_top(
-input clk,
-output [7:0] DAC,
-output dac_clk
-
+	input clk,
+	output [13:0] ADC_A,
+	output [13:0] DAC_A,
+	output mode,
+	output adc_clk_A,
+	output dac_clk_A,
+	output adc_en_A,
+	output dac_wrt_A
 );
- reg [7:0] a;
-always @(posedge clk) 
-begin
-a = a+1;
-end
 
-assign DAC = a;
-assign dac_clk = clk;
+	reg [13:0] address;
+	 
+	always @(posedge clk) 
+		begin
+			address = ADC_A;
+			DAC_A = address;
+		end
+
+
+	assign mode = 1;
+	assign adc_en_A = 1;
+	assign adc_clk_A = clk;
+	assign dac_wrt_A = clk;
+	assign dac_clk_A = clk;
+
+
+
  
- endmodule
+endmodule
 
 
 

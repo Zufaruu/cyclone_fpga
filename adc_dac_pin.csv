@@ -1,0 +1,55 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+# File: F:\Heavy_Software\Quartus_Prime_13.1\quartus\proyek\adc_dac_pin.csv
+# Generated on: Mon Jun 12 15:08:55 2023
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+ADC_A[13],Input,PIN_L2,1,B1_N2,PIN_L2,2.5 V,,,,
+ADC_A[12],Input,PIN_L1,1,B1_N2,PIN_L1,2.5 V,,,,
+ADC_A[11],Input,PIN_K2,1,B1_N1,PIN_K2,2.5 V,,,,
+ADC_A[10],Input,PIN_K1,1,B1_N1,PIN_K1,2.5 V,,,,
+ADC_A[9],Input,PIN_J6,1,B1_N1,PIN_J6,2.5 V,,,,
+ADC_A[8],Input,PIN_J5,1,B1_N1,PIN_J5,2.5 V,,,,
+ADC_A[7],Input,PIN_H4,1,B1_N0,PIN_H4,2.5 V,,,,
+ADC_A[6],Input,PIN_H3,1,B1_N0,PIN_H3,2.5 V,,,,
+ADC_A[5],Input,PIN_G4,1,B1_N0,PIN_G4,2.5 V,,,,
+ADC_A[4],Input,PIN_G3,1,B1_N0,PIN_G3,2.5 V,,,,
+ADC_A[3],Input,PIN_F2,1,B1_N1,PIN_F2,2.5 V,,,,
+ADC_A[2],Input,PIN_F1,1,B1_N1,PIN_F1,2.5 V,,,,
+ADC_A[1],Input,PIN_E3,1,B1_N0,PIN_E3,2.5 V,,,,
+ADC_A[0],Input,PIN_F3,1,B1_N0,PIN_F3,2.5 V,,,,
+DAC_A[13],Output,PIN_M3,1,B1_N1,PIN_M3,2.5 V,,,,
+DAC_A[12],Output,PIN_M4,1,B1_N1,PIN_M4,2.5 V,,,,
+DAC_A[11],Output,PIN_P1,1,B1_N2,PIN_P1,2.5 V,,,,
+DAC_A[10],Output,PIN_P2,1,B1_N2,PIN_P2,2.5 V,,,,
+DAC_A[9],Output,PIN_M7,1,B1_N2,PIN_M7,2.5 V,,,,
+DAC_A[8],Output,PIN_M8,1,B1_N2,PIN_M8,2.5 V,,,,
+DAC_A[7],Output,PIN_R4,2,B2_N0,PIN_R4,2.5 V,,,,
+DAC_A[6],Output,PIN_R3,2,B2_N0,PIN_R3,2.5 V,,,,
+DAC_A[5],Output,PIN_T3,2,B2_N0,PIN_T3,2.5 V,,,,
+DAC_A[4],Output,PIN_T4,2,B2_N0,PIN_T4,2.5 V,,,,
+DAC_A[3],Output,PIN_V3,2,B2_N0,PIN_V3,2.5 V,,,,
+DAC_A[2],Output,PIN_V4,2,B2_N0,PIN_V4,2.5 V,,,,
+DAC_A[1],Output,PIN_R6,2,B2_N0,PIN_R6,2.5 V,,,,
+DAC_A[0],Output,PIN_R7,2,B2_N0,PIN_R7,2.5 V,,,,
+adc_clk_A,Output,PIN_D1,1,B1_N0,PIN_D1,2.5 V,,,,
+adc_en_A,Output,PIN_L4,1,B1_N1,PIN_L4,2.5 V,,,,
+clk,Input,PIN_AH15,4,B4_N2,PIN_AH15,2.5 V,,,,
+dac_clk_A,Output,PIN_G5,1,B1_N0,PIN_G5,2.5 V,,,,
+dac_wrt_A,Output,PIN_M2,1,B1_N2,PIN_M2,2.5 V,,,,
+mode,Output,PIN_M1,1,B1_N2,PIN_M1,2.5 V,,,,
